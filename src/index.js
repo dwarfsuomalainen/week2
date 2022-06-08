@@ -9,16 +9,16 @@ const form = document.getElementById("form");
 
 let text = document.createElement("textarea");
 text.setAttribute("id", "textarea");
-form.append(text);
-form.append(document.createElement("br"));
+form.appendChild(text);
+form.appendChild(document.createElement("br"));
 console.log(text.value);
-form.append(document.createElement("br"));
+form.appendChild(document.createElement("br"));
 let button = document.createElement("button");
 button.id = "add-comment";
 button.innerHTML = "add your comment";
-form.append(button);
-form.append(document.createElement("br"));
-form.append(document.createElement("br"));
+form.appendChild(button);
+form.appendChild(document.createElement("br"));
+form.appendChild(document.createElement("br"));
 
 button.addEventListener("click", addComment);
 function addComment() {
@@ -33,7 +33,7 @@ delButton.setAttribute("id", "remove-comments");
 delButton.innerHTML = "Delete all the comments";
 form.appendChild(delButton);
 delButton.addEventListener("click", clearlist);
-form.append(list1);
+form.appendChild(list1);
 function clearlist() {
   //let ul = document.querySelectorAll("li");
   //let lenght = ul.children.lenght;
