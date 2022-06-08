@@ -1,22 +1,18 @@
 body {
   font-family: "Garamond", monospace;
   background-color: pink;
-  margin: 1em;
-  font-size: 2em;
 }
 
-table,
-th,
 td {
   border: 1px solid blueviolet;
 }
-h1 {
+/*h1 {
   background-color: chartreuse;
   padding: 20px;
-}
-table {
-  background-color: chocolate;
-  font-size: 2em;
+}*/
+#table-header {
+  background-color: gray;
+  padding: 1em;
 }
 
 .header {
@@ -25,4 +21,19 @@ table {
 
 #menu-table {
   text-align: left;
+  background-color: #f2f2f2;
+}
+
+.menu-table {
+  width: 20ch;
+}
+.even {
+  background-color: gainsboro;
+}
+
+.menu-layout {
+  align-content: center;
+  max-width: 80;
+  margin: 4ch;
+  background-color: salmon;
 }
