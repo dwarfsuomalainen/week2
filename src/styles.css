@@ -8,7 +8,7 @@ body {
 table,
 th,
 td {
-  border: 1px solid blueviolet;
+  border: 2px solid blueviolet;
 }
 h1 {
   background-color: chartreuse;
