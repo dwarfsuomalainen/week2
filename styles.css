@@ -1,0 +1,43 @@
+body {
+  font-family: "Garamond", monospace;
+  background-color: pink;
+}
+
+td {
+  border: 1px solid blueviolet;
+}
+/*h1 {
+  background-color: chartreuse;
+  padding: 20px;
+}*/
+#table-header {
+  background-color: gray;
+  padding: 1em;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header {
+  font-style: italic;
+}
+
+#menu-table {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.menu-table {
+  width: 20ch;
+  background-color: #f2f2f2;
+}
+.even {
+  background-color: gainsboro;
+}
+
+.menu-layout {
+  align-content: center;
+  max-width: 80;
+  margin: 4ch;
+  background-color: salmon;
+}
