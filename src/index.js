@@ -5,20 +5,14 @@ document.getElementById("app").innerHTML = `
 
 let list1 = document.createElement("ul");
 list1.id = "list";
-const form = document.getElementById("form");
+document.body.appendChild(list1);
 
-let text = document.createElement("textarea");
-text.setAttribute("id", "textarea");
-form.appendChild(text);
-form.appendChild(document.createElement("br"));
-console.log(text.value);
-form.appendChild(document.createElement("br"));
 let button = document.createElement("button");
 button.id = "add-comment";
 button.innerHTML = "add your comment";
-form.appendChild(button);
-form.appendChild(document.createElement("br"));
-form.appendChild(document.createElement("br"));
+document.body.appendChild(button);
+document.body.appendChild(document.createElement("br"));
+document.body.appendChild(document.createElement("br"));
 
 button.addEventListener("click", addComment);
 function addComment() {
@@ -28,12 +22,17 @@ function addComment() {
   list1.appendChild(li);
   console.log(text.value);
 }
+let text = document.createElement("textarea");
+text.setAttribute("id", "textarea");
+document.body.appendChild(text);
+document.body.appendChild(document.createElement("br"));
+console.log(text.value);
+document.body.appendChild(document.createElement("br"));
 let delButton = document.createElement("button");
 delButton.setAttribute("id", "remove-comments");
 delButton.innerHTML = "Delete all the comments";
-form.appendChild(delButton);
+document.body.appendChild(delButton);
 delButton.addEventListener("click", clearlist);
-form.appendChild(list1);
 function clearlist() {
   //let ul = document.querySelectorAll("li");
   //let lenght = ul.children.lenght;
