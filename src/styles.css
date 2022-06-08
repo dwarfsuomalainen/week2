@@ -1,0 +1,28 @@
+body {
+  font-family: "Garamond", monospace;
+  background-color: pink;
+  margin: 1em;
+  font-size: 2em;
+}
+
+table,
+th,
+td {
+  border: 1px solid blueviolet;
+}
+h1 {
+  background-color: chartreuse;
+  padding: 20px;
+}
+table {
+  background-color: chocolate;
+  font-size: 2em;
+}
+
+.header {
+  font-style: italic;
+}
+
+#menu-table {
+  text-align: left;
+}
