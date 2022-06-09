@@ -52,11 +52,10 @@ function addComment() {
   let ratedComment = document.createElement("div");
   ratedComment.id = "ratedComment";
   ratedComment.classList.add("comment");
-
   console.log(ratedComment.classList);
   let ratedCommentStar = document.createElement("div");
   ratedCommentStar.id = "ratedCommentStar";
-  ratedCommentStar.classList.add("comment-raiting");
+  ratedCommentStar.classList.add("comment-rating");
   ratedCommentStar.value = rate.value;
   console.log(ratedCommentStar.classList);
   ratedComment.appendChild(ratedCommentStar);
