@@ -27,9 +27,9 @@ if (rate.childElementCount < 4) {
     for (let c = 0; rate.childElementCount < 4; c++) {
       rateOp = document.createElement("option");
       rateOp.setAttribute("value", count[c]);
-      rateOp.setAttribute("text", count[c]);
+      rateOp.setAttribute("text", c + 1);
       console.log(rateOp.text + "text");
-      console.log(rateOp.setAttribute("value", count[c]));
+      console.log(rateOp.setAttribute("value", c + 1));
       let selectText = c + 1;
       rate1 = document.createTextNode(selectText);
       rateOp.appendChild(rate1);
