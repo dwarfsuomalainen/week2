@@ -57,6 +57,7 @@ function addComment() {
   ratedCommentStar.id = "ratedCommentStar";
   ratedCommentStar.classList.add("comment-rating");
   ratedCommentStar.value = rate.value;
+  console.log(rate.value);
   console.log(ratedCommentStar.classList);
   ratedComment.appendChild(ratedCommentStar);
   let ratedCommentText = document.createElement("div");
@@ -71,7 +72,7 @@ function addComment() {
 
   const li = document.createElement("li");
   const textNode = document.createTextNode(
-    ratedCommentStar.value + " stars, and review is: " + ratedCommentText.value
+    ratedCommentStar.value + ratedCommentText.value
   );
   li.appendChild(textNode);
   list1.appendChild(li);
