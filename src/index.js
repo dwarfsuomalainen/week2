@@ -56,13 +56,13 @@ function addComment() {
   console.log(ratedComment.classList);
   let ratedCommentStar = document.createElement("div");
   ratedCommentStar.id = "ratedCommentStar";
-  ratedCommentStar.classList.add("comment-raiting");
+  ratedCommentStar.setAttribute("class", "comment-raiting");
   ratedCommentStar.value = rate.value;
   console.log(ratedCommentStar.value);
   ratedComment.appendChild(ratedCommentStar);
   let ratedCommentText = document.createElement("div");
   ratedCommentText.id = "ratedCommentText";
-  ratedCommentText.classList.add("comment-text");
+  ratedCommentText.setAttribute("class", "comment-text");
   ratedCommentText.value = text.value;
   ratedComment.appendChild(ratedCommentText);
   console.log(ratedCommentText.value);
