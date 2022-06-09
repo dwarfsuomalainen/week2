@@ -30,7 +30,8 @@ if (rate.childElementCount < 4) {
       rateOp.setAttribute("text", count[c]);
       console.log(rateOp.text + "text");
       console.log(rateOp.setAttribute("value", count[c]));
-      rate1 = document.createTextNode(rate.childElementCount);
+      let selectText = c + 1;
+      rate1 = document.createTextNode(selectText);
       rateOp.appendChild(rate1);
       document.getElementById("rating").appendChild(rateOp);
     }
