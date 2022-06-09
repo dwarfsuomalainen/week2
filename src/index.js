@@ -27,7 +27,10 @@ if (rate.childElementCount < 4) {
     for (let c = 0; rate.childElementCount < 4; c++) {
       rateOp = document.createElement("option");
       rateOp.setAttribute("value", count[c]);
-      rate1 = document.createTextNode(count[c]);
+      rateOp.setAttribute("text", count[c]);
+      console.log(rateOp.text + "text");
+      console.log(rateOp.setAttribute("value", count[c]));
+      rate1 = document.createTextNode(rate.childElementCount);
       rateOp.appendChild(rate1);
       document.getElementById("rating").appendChild(rateOp);
     }
