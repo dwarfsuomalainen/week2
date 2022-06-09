@@ -67,8 +67,13 @@ function addComment() {
   ratedCommentText.innerHTML = text.value;
   ratedComment.appendChild(ratedCommentText);
   //console.log(ratedCommentText.value);
-
   document.body.appendChild(ratedComment);
+  let edit = document.createElement("button");
+  edit.innerText = "Remove comment";
+  edit.classList.add("remove-comment");
+  ratedComment.appendChild(edit);
+  edit.addEventListener("click", removeComment);
+  text.value = "";
 
   const li = document.createElement("li");
   const textNode = document.createTextNode(
@@ -79,6 +84,13 @@ function addComment() {
   li.appendChild(textNode);
   list1.appendChild(li);
   //console.log(text.value);
+}
+
+function removeComment() {
+  console.log("comment removed");
+  console.log(document.body.children);
+  let divtoDel = document.getElementById("ratedComment");
+  divtoDel.remove();
 }
 let text = document.createElement("textarea");
 text.setAttribute("id", "textarea");

@@ -1,6 +1,8 @@
 body {
   font-family: "Garamond", monospace;
   background-color: pink;
+  border: 1px solid darkcyan;
+  font-size: 20px;
 }
 
 td {
@@ -40,4 +42,20 @@ td {
   max-width: 80;
   margin: 4ch;
   background-color: salmon;
+}
+
+#ratedComment {
+  border: 1px solid darkblue;
+  background-color: coral;
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+}
+
+#list {
+  border: 1px solid darkblue;
+  background-color: coral;
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
 }
