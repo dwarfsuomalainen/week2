@@ -1,5 +1,6 @@
 body {
   font-family: "Garamond", Garamond, monospace;
+  background-color: pink;
 }
 
 table,
@@ -26,6 +27,7 @@ td {
   text-align: center;
   max-width: 740px;
   margin: auto;
+  background-color: salmon;
 }
 
 .menu-table {
