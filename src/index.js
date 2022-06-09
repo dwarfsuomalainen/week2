@@ -56,16 +56,17 @@ function addComment() {
   console.log(ratedComment.classList);
   let ratedCommentStar = document.createElement("div");
   ratedCommentStar.id = "ratedCommentStar";
-  ratedCommentStar.setAttribute("class", "comment-raiting");
+  ratedCommentStar.classList.add("comment-raiting");
   ratedCommentStar.value = rate.value;
-  console.log(ratedCommentStar.value);
+  console.log(ratedCommentStar.classList);
   ratedComment.appendChild(ratedCommentStar);
   let ratedCommentText = document.createElement("div");
   ratedCommentText.id = "ratedCommentText";
-  ratedCommentText.setAttribute("class", "comment-text");
+  ratedCommentText.classList.add("comment-text");
+  console.log(ratedCommentText.classList);
   ratedCommentText.value = text.value;
   ratedComment.appendChild(ratedCommentText);
-  console.log(ratedCommentText.value);
+  //console.log(ratedCommentText.value);
 
   document.body.appendChild(ratedComment);
 
@@ -75,7 +76,7 @@ function addComment() {
   );
   li.appendChild(textNode);
   list1.appendChild(li);
-  console.log(text.value);
+  //console.log(text.value);
 }
 let text = document.createElement("textarea");
 text.setAttribute("id", "textarea");
